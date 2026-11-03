@@ -18,6 +18,9 @@ A local VS Code coding assistant backed by a Python agent and Groq. It can inspe
 - Node.js and npm
 - A [Groq API key](https://console.groq.com/keys)
 
+  <img width="1920" height="1080" alt="Screenshot from 2026-11-03 16-21-30" src="https://github.com/user-attachments/assets/167f460c-5908-4177-b0cd-0cb58d010da8" />
+
+
 ## Configure the Python backend
 
 From the project root, create a virtual environment and install the backend dependencies:
