@@ -90,6 +90,9 @@ This creates a `.vsix` file in the project root. In VS Code, run **Extensions: I
 
 ## How it works
 
+<img width="834" height="818" alt="image" src="https://github.com/user-attachments/assets/2557c0b0-8bd0-4010-982b-9ab755642031" />
+
+
 1. The VS Code panel sends your prompt and relevant editor context to the extension host.
 2. The extension host starts the Python backend on `127.0.0.1` using a temporary port and token. The Groq API key stays in Python and is not sent to the webview.
 3. The Python agent sends requests to Groq and handles its workspace tools: list files, read files, search code, propose edits, and suggest commands.
