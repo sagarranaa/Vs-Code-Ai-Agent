@@ -1,0 +1,52 @@
+{
+  "name": "sagar-code-agent",
+  "displayName": "Sagar Code Agent",
+  "description": "A VS Code coding assistant powered by a local Python and Groq agent.",
+  "version": "0.1.0",
+  "publisher": "sagar-code-agent",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:sagarCodeAgent.openChat"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sagarCodeAgent.openChat",
+        "title": "Sagar Code Agent: Open Chat"
+      }
+    ],
+    "configuration": {
+      "title": "Sagar Code Agent",
+      "properties": {
+        "sagarCodeAgent.pythonPath": {
+          "type": "string",
+          "default": "",
+          "description": "Python executable to run the backend. Blank uses backend/.venv when available, then python3 or python."
+        },
+        "sagarCodeAgent.backendDirectory": {
+          "type": "string",
+          "default": "",
+          "description": "Optional path to the backend folder. Blank uses the backend folder packaged with this extension."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npm run compile && vsce package --no-dependencies --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/vscode": "^1.92.0",
+    "@vscode/vsce": "^3.2.0",
+    "typescript": "^5.7.0"
+  }
+}
