@@ -91,6 +91,8 @@ This creates a `.vsix` file in the project root. In VS Code, run **Extensions: I
 ## How it works
 
 <img width="834" height="818" alt="image" src="https://github.com/user-attachments/assets/2557c0b0-8bd0-4010-982b-9ab755642031" />
+<img width="1920" height="1080" alt="Screenshot from 2026-11-04 11-44-38" src="https://github.com/user-attachments/assets/cdc0d9d5-0a85-4f0c-8cca-fe678f7273e8" />
+
 
 
 1. The VS Code panel sends your prompt and relevant editor context to the extension host.
